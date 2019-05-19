@@ -299,19 +299,12 @@ nav h1 a {
 }
 
 @media screen and (min-width: 800px) {
-.inside #map-container {
-  width: 50%;
-  height: 100%;
-  position: relative;
-}
+  .inside #map-container {
+    width: 50%;
+    height: 100%;
+  }
 
-.inside #map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-#restaurant-container {
-  width: 50%;
-}
+  #restaurant-container {
+    width: 50%;
+  }
 }
