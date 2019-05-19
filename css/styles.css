@@ -315,7 +315,29 @@ nav h1 a {
   color: #666;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (max-width: 799px) {
+  .inside #map-container {
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 200px;
+    order: 1;
+  }
+
+  #restaurant-container {
+    width: 100%;
+    order: 2;
+  }
+
+  #reviews-container {
+    width: 100%;
+    order: 3;
+  }
+
+  #reviews-container h2 {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1199px) {
   .inside #map-container {
     width: 50%;
     max-height: 100%;
