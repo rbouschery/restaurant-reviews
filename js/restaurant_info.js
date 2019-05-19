@@ -162,15 +162,20 @@ createReviewHTML = (review) => {
   header.appendChild(date);
 
   li.appendChild(header);
-  const rating = document.createElement('p');
+  const body = document.createElement('div');
+  body.classList.add('reviews-body');
+
+  const rating = document.createElement('span');
   rating.classList.add('reviews-rating');
   rating.innerHTML = `Rating: ${review.rating}`;
-  li.appendChild(rating);
+  body.appendChild(rating);
 
   const comments = document.createElement('p');
   comments.classList.add('reviews-comments');
   comments.innerHTML = review.comments;
-  li.appendChild(comments);
+  body.appendChild(comments);
+
+  li.appendChild(body);
 
   return li;
 }
