@@ -14,7 +14,6 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position: relative;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -39,20 +38,27 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	display: block;
 }
 #maincontent {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: flex;
+  height: 100%;
 }
 
 #footer {
+  background-color: #444;
+  color: #aaa;
+  font-size: 8pt;
+  letter-spacing: 1px;
+  padding: 25px;
   text-align: center;
   text-transform: uppercase;
-  position: absolute;
+  width: 100%;
 }
 /* ====================== Navigation ====================== */
 nav {
   height: 80px;
   background-color: #252831;
   text-align: center;
+  width: 100%;
 }
 nav h1 {
   margin: auto;
@@ -70,6 +76,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 2em;
     margin: 0 auto;
+    width: 80%;
   }
 
 /* Display list items side by side */
@@ -200,36 +207,17 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-
-.inside header {
-}
-
 .inside #maincontent {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
 }
 .inside #map-container {
-  background: blue none repeat scroll 0 0;
-  /* min-width: 50%;
-  max-width: 700px; */
-  width: 50%;
+  /* background: blue none repeat scroll 0 0; */
+  width: 20px;
   height: 300px;
-  display: flex;
-  flex: 1 1;
-  position: relative;
 }
 .inside #map {
-  flex: 1;
   background-color: #ccc;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
 }
 .inside #footer {
-  position:absolute;
-  bottom: 0;
 }
 
 #restaurant-name {
@@ -267,8 +255,8 @@ nav h1 a {
 	width: 90%;
 }
 #restaurant-container, #reviews-container {
-  /* min-width: 50%;
-  max-width: 800px; */
+  min-width: 50%;
+  width: 100%;
   width: 50%;
   margin: 0 auto;
 }
@@ -298,13 +286,14 @@ nav h1 a {
   color: #666;
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .inside #map-container {
     width: 50%;
-    height: 100%;
+    max-height: 100%;
+    min-height: 500px;
   }
 
   #restaurant-container {
     width: 50%;
   }
-}
+} */
