@@ -153,7 +153,7 @@ createReviewHTML = (review) => {
   const name = document.createElement('p');
   const header = document.createElement('div');
   header.classList.add('reviews-header');
-
+  header.tabIndex = 0;
   name.classList.add('reviews-name');
   name.innerHTML = review.name;
   header.appendChild(name);
@@ -170,11 +170,13 @@ createReviewHTML = (review) => {
   const rating = document.createElement('span');
   rating.classList.add('reviews-rating');
   rating.innerHTML = `Rating: ${review.rating}`;
+  rating.tabIndex = 0;
   body.appendChild(rating);
 
   const comments = document.createElement('p');
   comments.classList.add('reviews-comments');
   comments.innerHTML = review.comments;
+  comments.tabIndex = 0;
   body.appendChild(comments);
 
   li.appendChild(body);
