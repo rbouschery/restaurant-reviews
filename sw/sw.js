@@ -1,4 +1,4 @@
-var myCache = 'rr-cache-v4';
+var myCache = 'rr-cache-v5';
 let urlsToCache = [
   '/',
   '/restaurant.html?id=1',
