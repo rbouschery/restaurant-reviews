@@ -39,8 +39,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	display: block;
 }
 #maincontent {
-  /* display: flex;
-  flex-flow: row wrap; */
+  display: flex;
+  flex-flow: row wrap;
   height: 100%;
 }
 
