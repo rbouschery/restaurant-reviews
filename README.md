@@ -1,6 +1,6 @@
 # Restaurant Reviews App - Udacity Final Project
-This app was created/adjusted as part of the Udacity Frontend Developer Nanodegree.
 ---
+This app was created/adjusted as part of the Udacity Frontend Developer Nanodegree.
 
 ## Project Description
 
