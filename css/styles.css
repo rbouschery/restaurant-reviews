@@ -291,7 +291,7 @@ nav h1 a {
   color: white;
   background-color: #eebd3f;
 }
-#reviews-container h2 {
+#reviews-container h3 {
   color: #f58500;
   font-size: 24pt;
   font-weight: 300;
@@ -340,7 +340,7 @@ nav h1 a {
     order: 3;
   }
 
-  #reviews-container h2 {
+  #reviews-container h3 {
     margin-top: 0;
   }
 }
@@ -366,7 +366,7 @@ nav h1 a {
     order: 3;
   }
 
-  #reviews-container h2 {
+  #reviews-container h3 {
     margin-top: 0;
   }
 }
@@ -413,7 +413,7 @@ nav h1 a {
     order: 3;
   }
 
-  #reviews-container h2 {
+  #reviews-container h3 {
     margin-top: 0;
   }
 
